@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './index.css';
+import Main from './Main';
+import llham from './components/llham.png'
+import worker from './components/worker.png';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <><header className="header">
+      <div className="logo-container">
+      <img src={llham} alt="Logo" className="logo-componentes" />
+      <div className="logo">CONECTA KOMERS</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">INICIO</a></li>
+          <li><a href="#">SERVICIOS</a></li>
+          <li><a href="#">CONTACTO</a></li>
+        </ul>
+      </nav>
+      <div className="auth-buttons">
+        <button className="login-button">INICIAR SESIÓN</button>
+        <button className="register-button">REGISTRO</button>
+      </div>
+    </header>
+    <div className='main-content'>
+      <main className='main-content'>
+        <Main/>
+      </main>
     </div>
+    <main className="body">
+        <section className="hero">
+            <div className="hero-image">
+                <img src={worker} alt="Main" />
+            </div>
+        </section>
+    </main>
+      </>      
   );
-}
+};
 
 export default App;
