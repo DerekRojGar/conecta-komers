@@ -1,14 +1,14 @@
 import React from 'react';
 import './index.css';
 import Main from './Main';
-import llham from './components/llham.png'
 import worker from './components/worker.png';
+import ch from './components/ch.jpg'
 
 const App = () => {
   return (
     <><header className="header">
       <div className="logo-container">
-      <img src={llham} alt="Logo" className="logo-componentes" />
+      <img src={ch} alt="Logo" className="logo-componentes" />
       <div className="logo">CONECTA KOMERS</div>
       </div>
       <nav>
