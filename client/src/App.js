@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import Main from './Main';
 import worker from './components/worker.png';
-import ch from './components/ch.jpg'
+import ch from './components/lg1.png'
 
 const App = () => {
   return (
